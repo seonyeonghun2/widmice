@@ -1,0 +1,51 @@
+body {
+    font: 14px/1.5 bold 'Montserrat', 'Noto Sans KR', sans-serif;    
+    background: url('../images/visual_bg.jpg') no-repeat center top / contain;
+}
+
+.d-none {
+    display: none
+}
+
+
+
+.co {
+    width: 1000px;
+    height: 515px;
+    margin: 0 auto;
+    background: url("../images/co_img.png") no-repeat 45% 10%,
+                url("../images/corightbg.jpg") no-repeat 500px 0,
+                url("../images/coleftbg.jpg") no-repeat 0 0;
+    background-color: gold;
+    position: relative
+}
+.coflight {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cotext {
+    position: absolute;
+    width: 40%;
+    left: 55%;
+    top: 33%
+}
+.cotext p {
+    line-height: 1.6
+}
+.point { /* 종속 선택자 */
+    font-size: 30px;
+    line-height: 1.8
+}
+.btn-down {
+    background: black;
+    color: white;
+    position: absolute;
+    left: 55%;
+    top: 80%;
+}
+.btn-down a {
+    text-decoration: none;
+    color: inherit;
+}
