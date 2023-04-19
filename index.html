@@ -123,5 +123,20 @@
             </div>
         </div>
     </footer>
+    <script>
+        // 1.DOM Select (=선택), 변수 할당(=제어)
+        const burger = document.querySelector("#burger");
+
+        // 2.Event(클릭, 터치..) 처리
+        burger.addEventListener("click", function(){
+            // 2-1. navbar 선택하고
+            const navbar = document.querySelector(".navbar");
+            // 2-2. narbar 스타일 조작(30% -> 100%, height:auto --> 400px)
+            //console.log(navbar); // 확인
+            //console.dir(navbar); // 객체가 갖고있는 메소드,프로퍼티 확인
+            console.log(window.getComputedStyle(navbar)); //navbar 객체에 css 스타일정보를 get
+            // 2-3. height/background를 before-after 다른값을 설정 (ui를 변화예정)
+        })
+    </script>
 </body>
 </html>

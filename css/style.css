@@ -271,8 +271,13 @@ header {
 /* ------------ mobile ------------- */
 @media screen and (max-width: 600px){
     .header-nav , .header-links { display: none}
-    .header-logo {
-        margin: 0 0 0 1rem
+    .navbar {
+        height: 400px;
+        background: rgba(0,0,0,1);
+    }
+    .navbar-wrap {
+        justify-content: space-between;
+        margin: 0 1rem
     }
     #burger {
         display: block;
@@ -301,4 +306,102 @@ header {
     .text p:nth-child(2){
         font-size: 1.7em
     }
+    .co {
+        width: 90%;
+        background: url("../images/co_img.png") no-repeat 45% 10%,
+                    url("../images/corightbg.jpg") no-repeat 0 0 / cover;
+    }
+    .cotext {
+        width: 90%;
+        left: 5%;
+        top: 45%
+    }
+    .btn-down {
+        left: 5%;
+        top: 80%;
+    }
+
+    .bg {
+        background-color: #F5F5F5;
+        background-image: none;
+    }
+    .category {
+        flex-direction: column; /* 플렉스 아이템 정렬 : 기본 row(행)을 column(열) 변경 */
+        gap: 15px 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .category li {
+        height: 250px;
+        overflow: hidden;
+    }
+    .category li:nth-child(1) img {
+        margin: -140px 0 0 0
+    }
+    .category li:nth-child(3) img {
+        margin: -250px 0 0 0
+    }
+    .category figure {
+        height: 100%;
+    }
+    .category figure img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .category figure figcaption{
+        width: auto;
+        padding: 15px 20px
+    }
+
+    .site-info {
+        flex-direction: column;
+        align-items: center;
+        background: #000000
+    }
+    .footer-logo {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        background: white;
+        padding: 15px 0
+    }
+    .info {
+        width: 90%;
+        padding: 30px 0;
+        text-align: center;
+        color: white
+    }
+
+    /* contact - map */
+    .map-wrap {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        margin: 0 auto 150px auto;
+    }
+    #map {
+        width: 100%;
+    }
+    .info {
+        text-align: left;
+        color: black;
+    }
+    .info li .icon {
+        float: left;
+    }
+    .info li {
+        overflow: hidden;        
+    }
+    .info li:nth-child(2)::before, .info li:nth-child(2)::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #eaeaea;
+        margin: 20px 0;
+    } 
+    .info .text {
+        margin: 0
+    }
+
 }
