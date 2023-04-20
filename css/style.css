@@ -270,10 +270,52 @@ header {
 
 /* ------------ mobile ------------- */
 @media screen and (max-width: 600px){
+    html { font-size: 20px}
     .header-nav , .header-links { display: none}
     .navbar {
+        transition: all .4s ease-in-out;
+    }
+    .navbar.active {
         height: 400px;
         background: rgba(0,0,0,1);
+    }
+    .navbar.active .header-nav {
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100px;
+    }
+    .navbar.active .header-links {
+        display: flex;
+        height: 50px;
+        width: 100%;
+        position: absolute;
+        top: 350px;
+        left: 0;
+        gap: 0;
+    }
+    .navbar.active .header-links li {
+        background: #2089b2;
+        flex: 1 1 auto; /* width: 50% */
+        font-size: 1rem;
+        text-align: center;
+        line-height: 50px;
+    }
+    .navbar.active .header-nav #gnb li {
+        padding: .5rem 2rem;
+    }
+    .navbar.active .header-nav #gnb li.current {
+        border-radius: 30px;
+        color: #58c8f6;
+        background:#eaeaea;
+    }    
+    .navbar.active .header-links:hover li {
+        background:#58c8f6
+    }
+    .navbar.active #gnb {
+        flex-direction: column;
+        gap: .5rem 0
     }
     .navbar-wrap {
         justify-content: space-between;
@@ -402,6 +444,12 @@ header {
     } 
     .info .text {
         margin: 0
+    }
+    .info p {
+        color: #eaeaea;
+        font-size: .75rem;
+        text-align: center;
+        line-height: 1rem;
     }
 
 }

@@ -41,7 +41,7 @@
               <li><a href="company.html">company</a></li>
               <li><a href="business.html">business</a></li>
               <li><a href="portfolio.html">portfolio</a></li>
-              <li><a href="contact.html">contact us</a></li>
+              <li class="current"><a href="#">contact us</a></li>
             </ul>
           </nav>
           <ul class="header-links">
@@ -139,28 +139,7 @@
       type="text/javascript"
       src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a1ca41fb31401221d154b08360983b7a"
     ></script>
-    <script>
-      var container = document.getElementById("map");
-      var options = {
-        center: new kakao.maps.LatLng(35.1504754, 126.8392961),
-        level: 3,
-      };
-
-      var map = new kakao.maps.Map(container, options);
-
-      // 마커가 표시될 위치입니다
-      var markerPosition = new kakao.maps.LatLng(35.1504754, 126.8392961);
-
-      // 마커를 생성합니다
-      var marker = new kakao.maps.Marker({
-        position: markerPosition,
-      });
-
-      // 마커가 지도 위에 표시되도록 설정합니다
-      marker.setMap(map);
-
-      // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
-      // marker.setMap(null);
-    </script>
+    <script src="script/kakao_map.js"></script>
+    <script src="script/menu.js"></script>
   </body>
 </html>
